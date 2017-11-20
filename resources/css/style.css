@@ -1,0 +1,169 @@
+/* general styles */
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: rgba(74,74,74,1);
+}
+
+header,
+footer,
+.banner,
+.information,
+.learning,
+.thesis {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  display: flex;
+  max-width: 1080px;
+  height: auto;
+  margin: auto;
+}
+
+.banner {
+  background-color: rgb(216,216,216);
+}
+
+.learning {
+  background-color: rgb(234,235,236);
+}
+
+/* header */
+
+/* -- logo -- */
+.headerCont {
+  align-items: center;
+  height: 64px;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  width:auto;
+  height: 32px;
+  align-items: center;
+  margin-left: 1.5rem;
+  font-size: 1.5rem;
+  font-family: 'Ubuntu', sans-serif;
+  color: rgb(155,155,155);
+  text-transform: uppercase;
+}
+
+.logo .bLogo {
+  font-weight: 700;
+  color: rgb(74,74,74);
+}
+
+/*nav*/
+
+nav {
+  display: flex;
+  height: auto;
+  width: auto;
+}
+
+nav ul {
+  display: flex;
+  margin-right: 24px;
+  font-size: 1rem;
+  color: rgb(74,74,74);
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+nav ul li {
+  margin-left: 16px;
+}
+
+.small {
+  display: none;
+}
+
+
+/* -- Banner -- */
+
+/*.bannerContent {
+  justify-content: space-between;
+}*/
+
+.photoBanner {
+  display: flex;
+  width: 60%;
+  padding: 2rem 1.5rem;
+  align-items: center;
+}
+
+.photoBanner img {
+  height: auto;
+  width: 100%;
+}
+
+.contentBanner {
+  display: flex;
+  width: 40%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contentBanner h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: rgb(74,74,74);
+  padding-bottom: 1rem;
+}
+
+.contentBanner p {
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+  color: rgb(74,74,74);
+  padding-bottom: 1rem;
+}
+
+.contentBanner a{
+  font-size: 1.25rem;
+  color: white;
+  width: 80%;
+  padding: 0.75rem 0;
+  background-color: rgb(74,74,74);
+  text-align: center;
+  transition: background-color 200ms ease 20ms;
+}
+
+.contentBanner a:hover{
+  background-color: rgb(255,85,0);
+}
+
+/* -- footer -- */
+
+footer .container {
+  border-top: 1px solid rgba(155,155,155,0.4);
+  padding: 1rem 1.5rem 3rem 1.5rem;
+  justify-content: space-between;
+  font-size: 1rem;
+}
+
+/*.siteInfoMenu {
+  display: flex;
+}*/
+
+.siteInfoMenu li {
+  margin-left: 1rem;
+  display: inline-block;
+}
+
+.siteInfoMenu li a {
+  color: rgba(74,74,74,1);
+  transition: color 200ms ease 20ms;
+}
+
+.siteInfoMenu li a:hover {
+  color: rgba(255,85,0,0.7);
+}

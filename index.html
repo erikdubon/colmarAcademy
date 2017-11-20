@@ -4,13 +4,16 @@
     <meta charset="utf-8">
     <link href="./resources/css/reset.css" type="text/css" rel="stylesheet">
     <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,900" rel="stylesheet">
     <title>Colmar Academy</title>
   </head>
   <body>
     <header>
-      <div class="container">
+      <div class="headerCont container">
         <div class="logo">
           <img src="./resources/images/ic-logo.svg" alt="Colmar Academy"/>
+          <h1><span class="bLogo">Colmar</span>Academy</h1>
         </div>
         <nav>
           <ul class="wide">
@@ -29,14 +32,14 @@
       </div>
     </header>
     <div class="banner">
-      <div class="container">
+      <div class="bannerContent container">
         <div class="photoBanner">
           <img src="./resources/images/banner.jpg" alt="Colmar Students">
         </div>
         <div class="contentBanner">
           <h2>Learn something new everyday</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-          <span class="buttonStart">Start here</span>
+          <a href="#"><span class="buttonStart">Start here</span></a>
         </div>
       </div>
     </div>
@@ -137,7 +140,7 @@
     <div class="thesis">
       <div class="container">
         <h3>Thesis exhibit</h3>
-        <div class="thesisBig">
+        <div class="BigInfo bThesis">
           <div class="videoThesis">
             <video src="./resources/videos/thesis.mp4" autoplay loop></video>
           </div>
@@ -168,12 +171,10 @@
     </div>
     <footer>
       <div class="container">
-        <div class="copyright">
-          <span>&copy;2016 Colmar Academy. All rights reserved</span>
-        </div>
+        <span>&copy;2016 Colmar Academy. All rights reserved</span>
         <ul class="siteInfoMenu">
-          <li>Terms</li>
-          <li>Privacy</li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Privacy</a></li>
         </ul>
       </div>
     </footer>
