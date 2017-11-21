@@ -35,6 +35,40 @@ footer,
   background-color: rgb(234,235,236);
 }
 
+h3 {
+  text-align: center;
+  padding: 32px 0;
+  font-size: 2rem;
+  font-weight: 700;
+  color: rgb(74,74,74);
+}
+
+h4 {
+  text-align: left;
+  font-size: 1.5rem;
+  padding: 24px 0 8px 0;
+  color: rgb(74,74,74);
+  font-weight: 600;
+}
+
+h5 {
+  text-align: left;
+  font-size: 1.25rem;
+  color: rgb(74,74,74);
+  font-weight: 600;
+  line-height: 1.5rem;
+}
+
+p {
+  font-size: 1rem;
+  color: rgb(74,74,74);
+  line-height: 1.35rem;
+}
+
+.small {
+  display: none;
+}
+
 /* header */
 
 /* -- logo -- */
@@ -72,8 +106,6 @@ nav {
 nav ul {
   display: flex;
   margin-right: 24px;
-  font-size: 1rem;
-  color: rgb(74,74,74);
   flex-wrap: wrap;
   justify-content: flex-end;
 }
@@ -82,16 +114,23 @@ nav ul li {
   margin-left: 16px;
 }
 
-.small {
-  display: none;
+nav ul li a {
+  font-size: 1rem;
+  color: rgb(74,74,74);
+  transition: all 200ms ease 20ms;
+}
+
+nav ul li a:hover {
+  background-color: rgb(255,85,0);
+  color: white;
+  padding: 1.35rem 0.5rem;
+  /*color: rgb(255,85,0);
+  font-weight: 600;
+  text-decoration: underline;*/
 }
 
 
 /* -- Banner -- */
-
-/*.bannerContent {
-  justify-content: space-between;
-}*/
 
 .photoBanner {
   display: flex;
@@ -134,12 +173,133 @@ nav ul li {
   padding: 0.75rem 0;
   background-color: rgb(74,74,74);
   text-align: center;
-  transition: background-color 200ms ease 20ms;
+  transition: all 200ms ease 20ms;
 }
 
 .contentBanner a:hover{
   background-color: rgb(255,85,0);
 }
+
+/* -- Information and thesis -- */ /*similar structure*/
+
+.bigInfo {
+  display: flex;
+  width: 60%;
+  padding: 2rem 1.5rem;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.biPicture img,
+.videoThesis video{
+  height: auto;
+  width: 100%;
+}
+
+.infoList {
+  display: flex;
+  width: 40%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bigInfo h3 {
+  text-align: left;
+  padding-bottom: 24px;
+}
+
+.sAuthor {
+  margin-top: 2rem;
+  font-size: 0.95rem;
+  color: rgb(60,60,60);
+}
+
+.infoList {
+  display: flex;
+  height: auto;
+  width: 40%;
+  flex-direction: column;
+  border-left: 1px solid rgb(234,235,236);
+  border-right: 1px solid rgb(234,235,236);
+  justify-content: flex-start;
+}
+
+.newInfoList {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  border-top: 1px solid rgb(234,235,236);
+  border-bottom: 1px solid rgb(234,235,236);
+  align-items: center;
+  transition: all 200ms ease 20ms;
+}
+
+.newInfoList:hover {
+  background-color: rgb(234,235,236);
+}
+
+.infoListPic {
+  width: 35%;
+  padding: 1rem;
+}
+
+.infoListPic img {
+  height: auto;
+  width: 100%;
+}
+
+.infoListText {
+  width: 65%;
+}
+
+.infoListText p {
+  padding: 0.5rem 0;
+}
+
+.textButton a {
+  color: rgb(77,146,226);
+  transition: all 200ms ease 20ms;
+}
+
+.textButton a:hover {
+  margin-left: 6px;
+  color: rgb(46,120,208);
+}
+
+/* -- Thesis -- */
+
+.thesis .container {
+  flex-direction: column;
+}
+
+.thesis .container h3, {
+  width: 100%;
+}
+
+.bThesis {
+  padding-top: 0;
+}
+
+.thesisWrapper {
+  display: flex;
+}
+
+/*.thesisWrapper .infoList .newInfoList:nth-child(odd) {
+  background-color: rgb(216,216,216);
+}*/
+
+.bigInfo h4 {
+  text-align: left;
+  padding-top: 32px;
+  padding-bottom: 24px;
+}
+
+.nBorder {
+  border: 0;
+}
+
+/* -- Learning -- */
+
 
 /* -- footer -- */
 
@@ -149,10 +309,6 @@ footer .container {
   justify-content: space-between;
   font-size: 1rem;
 }
-
-/*.siteInfoMenu {
-  display: flex;
-}*/
 
 .siteInfoMenu li {
   margin-left: 1rem;
