@@ -20,6 +20,22 @@ footer,
   height: auto;
 }
 
+footer,
+.banner,
+.information,
+.learning,
+.thesis {
+  position: relative;
+  top: 64px;
+}
+
+header {
+  position: fixed;
+  z-index: 10;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
 .container {
   display: flex;
   max-width: 1080px;
@@ -249,7 +265,8 @@ nav ul li a:hover {
 }
 
 .infoListText {
-  width: 65%;
+  width: 62%;
+  margin-right: 3%;
 }
 
 .infoListText p {
@@ -300,6 +317,48 @@ nav ul li a:hover {
 
 /* -- Learning -- */
 
+.learning .container {
+  flex-direction: column;
+}
+
+.colmarCareers {
+  display: flex;
+  margin: 0 72px 32px 72px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+.career {
+  display: flex;
+  width: 32%;
+  height: auto;
+  flex-direction: column;
+  background-color: white;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+
+.career img {
+  width: 100%;
+  height: auto;
+}
+
+.careerInfo {
+  /*padding: 10%;*/
+  padding-bottom: 1rem;
+  height: auto;
+  width: 80%;
+}
+
+.careerInfo h4 {
+  padding: 1rem 0 0.5rem 0;
+}
+
+.upper {
+  text-transform: uppercase;
+  padding-bottom: 0.5rem;
+}
 
 /* -- footer -- */
 
