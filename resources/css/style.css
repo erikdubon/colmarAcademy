@@ -29,13 +29,6 @@ footer,
   top: 64px;
 }
 
-header {
-  position: fixed;
-  z-index: 10;
-  background-color: white;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-}
-
 .container {
   display: flex;
   max-width: 1080px;
@@ -85,7 +78,15 @@ p {
   display: none;
 }
 
+
 /* header */
+
+header {
+  position: fixed;
+  z-index: 10;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
 
 /* -- logo -- */
 .headerCont {
@@ -145,6 +146,55 @@ nav ul li a:hover {
   text-decoration: underline;*/
 }
 
+@media only screen and (max-width: 647px) {
+
+  .logo {
+    display: none;
+  }
+
+  nav .wide {
+    display: none;
+  }
+
+  nav {
+    width: 100%;
+    height: 100%;
+  }
+
+  nav .small {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    justify-content: space-around;
+  }
+
+  nav .small li {
+    display: flex;
+    height: 100%;
+    margin: 0;
+    align-items: center;
+  }
+
+    nav ul li a:hover {
+      background-color: rgb(255,85,0);
+      color: white;
+      padding: 1.1rem 0.5rem;
+      /*color: rgb(255,85,0);
+      font-weight: 600;
+      text-decoration: underline;*/
+  }
+
+}
+
+
+@media only screen and (max-width: 500px) {
+
+  .wide {
+    display: none;
+  }
+
+}
 
 /* -- Banner -- */
 
@@ -165,6 +215,7 @@ nav ul li a:hover {
   width: 40%;
   flex-direction: column;
   justify-content: center;
+  padding-bottom: 2rem;
 }
 
 .contentBanner h2 {
@@ -194,6 +245,71 @@ nav ul li a:hover {
 
 .contentBanner a:hover{
   background-color: rgb(255,85,0);
+}
+
+@media only screen and (max-width: 760px)
+{
+    .banner .container {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .photoBanner {
+      width: 94%;
+      justify-content: center;
+    }
+
+    .contentBanner {
+      width: 90%;
+      align-items: center;
+      padding-bottom: 2rem;
+    }
+
+    .contentBanner h2 {
+      padding-bottom: 1rem;
+      text-align: center;
+    }
+
+    .contentBanner p {
+      text-align: center;
+    }
+
+    .contentBanner a{
+      width: 80%;
+      padding: 0.75rem 0;
+      margin: 0.5rem 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+  .photoBanner {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 2rem;
+    justify-content: center;
+  }
+
+  .contentBanner {
+    padding-bottom: 0;
+  }
+
+  .contentBanner h2 {
+    padding-bottom: 2rem;
+    text-align: center;
+  }
+
+  .contentBanner p {
+    padding-bottom: 1.5rem;
+  }
+
+  .contentBanner a{
+    width: 100%;
+    margin: 0;
+    margin-bottom: 2rem;
+  }
+
 }
 
 /* -- Information and thesis -- */ /*similar structure*/
@@ -283,6 +399,50 @@ nav ul li a:hover {
   color: rgb(46,120,208);
 }
 
+@media only screen and (max-width: 500px) {
+
+  .information .container .bigInfo {
+    display: none;
+  }
+
+  .infoSmall {
+    width: 100%;
+    border: 0;
+  }
+
+  .infoSmall .newInfoList {
+    border: 0;
+    flex-direction: column;
+  }
+
+  .infoSmall .newInfoList .small {
+    display: block;
+    width: auto;
+    padding: 1rem;
+  }
+
+  .infoSmall .newInfoList .infoListText {
+    width: 83%;
+    height: auto;
+    padding: 0 1rem 3rem 1rem;
+  }
+
+  .infoSmall .newInfoList .infoListText h5 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .infoSmall .newInfoList .infoListText p {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .infoSmall .newInfoList .infoListText a {
+    font-size: 1.25rem;
+  }
+
+}
+
 /* -- Thesis -- */
 
 .thesis .container {
@@ -313,6 +473,18 @@ nav ul li a:hover {
 
 .nBorder {
   border: 0;
+}
+
+@media only screen and (max-width: 500px) {
+
+  .thesisWrapper .wide {
+    display: none;
+  }
+
+  .bThesis {
+    width: 100%;
+  }
+
 }
 
 /* -- Learning -- */
@@ -360,6 +532,47 @@ nav ul li a:hover {
   padding-bottom: 0.5rem;
 }
 
+@media only screen and (max-width: 500px) {
+
+  .learning {
+    background-color: white;
+    border: 1px solid rgb(234,235,236);
+  }
+
+  .colmarCareers {
+    margin: 0 1rem 2rem 1rem;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .career {
+    width: 100%;
+    background-color: rgb(234,235,236);
+    margin-bottom: 0.5rem;
+  }
+
+  .career img {
+    display: none;
+  }
+
+  .careerInfo {
+    padding:0;
+    height: auto;
+    width: 90%;
+  }
+
+  .careerInfo h4 {
+    padding: 1rem 0;
+  }
+
+  .upper {
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+  }
+
+}
+
 /* -- footer -- */
 
 footer .container {
@@ -381,4 +594,10 @@ footer .container {
 
 .siteInfoMenu li a:hover {
   color: rgba(255,85,0,0.7);
+}
+
+@media only screen and (max-width: 500px) {
+  footer .container {
+    border: none;
+  }
 }
