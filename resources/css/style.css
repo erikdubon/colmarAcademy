@@ -188,7 +188,7 @@ nav ul li a:hover {
 }
 
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
 
   .wide {
     display: none;
@@ -282,7 +282,7 @@ nav ul li a:hover {
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
 
   .photoBanner {
     width: 100%;
@@ -399,7 +399,7 @@ nav ul li a:hover {
   color: rgb(46,120,208);
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
 
   .information .container .bigInfo {
     display: none;
@@ -475,7 +475,7 @@ nav ul li a:hover {
   border: 0;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
 
   .thesisWrapper .wide {
     display: none;
@@ -532,7 +532,7 @@ nav ul li a:hover {
   padding-bottom: 0.5rem;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
 
   .learning {
     background-color: white;
@@ -596,7 +596,7 @@ footer .container {
   color: rgba(255,85,0,0.7);
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
   footer .container {
     border: none;
   }
